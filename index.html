@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coronavirus Stimulus Check Calculator</title>
+        <link rel="Stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header><h2>Coronavirus Stimulus Check Calculator</h1></header>
+        <main>
+            <article>
+                <section>
+                    <h3>Coronavirus Stimulus Check Calculator</h3>
+                    <div id="divInstr">Enter your annual income</div>
+                    <div id="calculator">
+                            <label for="2019income">2019 Income: </label><input id="2019income" type="number" onchange="onIncomeChanged(this.value)"><br>
+                            <label for="numChildren">Number of children dependents: </label><input id="numChildren" type="number" onchange="onNumChildrenChanged(this.value)"><br>
+                            <label for="radioFilingStatus">Filing status: </label>
+                            <input id="radioIndividual" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="0" checked="true"><label for="radioIndividual">Individual</label>
+                            <input for="radioHeadOfHousehold" id="radioHeadOfHousehold" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="1"><label for="radioHeadOfHousehold">Head of Household</label>
+                            <input for="radioMarried" id="radioMarried" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="2"><label for="radioMarried">Married</label>
+                            <h3>Results</h3>
+                            <label for="filingStatus">Filing status: </label><span class="spanValue" id="filingStatus">Individual</span><br>
+                            <label for="amountOver">Amount over $75,000 limit: </label><span class="spanValue" id="amountOver">0</span><br>
+                            <label for="amountFromIncome">Amount from income: </label><span class="spanValue" id="amountFromIncome">0</span><br>
+                            <label for="amountFromChildren">Amount from children: </label><span class="spanValue"id="amountFromChildren">0</span><br>
+                            <div id="divTotal"><label for="checkAmount" class="totalCheckAmount">Expected check amount: </label><span class="spanValue" id="checkAmount">0</span><br></div>
+                    </div>
+                </section>
+                <aside>
+                    <h3>Coronavirus Stimulus Summary</h3>
+                    <div>
+                        <ul>
+                            <li>Income Thresholds are: </li>
+                            <ul>
+                                <li>$75,000.00 for Individuals</li>
+                                <li>$112,500.00 for Head of household</li>
+                                <li>$150,000.00 for Married couples</li>
+                            </ul>
+                            <li>For individuals making more than the threshold, the Stimulus check will be $5 less for ever $100 above the threshold</li>
+                            <li>For individuals making over $99,000.00, head of households making over $136,500.00, and married couples making over $198,000.00, checks will not be sent, but affected parties can still claim dependent children.</li>
+                            <li>For every child dependent under the age of 17, an additional $500 will be included.</li>
+                        </ul>
+                    </div>
+                </aside>
+            </article>
+        </main>
+    </body>
+</html>
