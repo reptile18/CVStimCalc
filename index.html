@@ -4,31 +4,41 @@
         <title>Coronavirus Stimulus Check Calculator</title>
         <link rel="Stylesheet" type="text/css" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script type="text/javascript" src="index.js"></script>
     </head>
     <body>
-        <header><i class="fas fa-shield-virus"></i><h2>Coronavirus Stimulus Check Calculator</h1></header>
-        <main>
-            <article>
-                <section>
-                    <h3>Coronavirus Stimulus Check Calculator</h3>
-                    <div id="divInstr">Enter your annual income</div>
+        <header><i class="fas fa-shield-virus"></i><h2>Coronavirus Stimulus Check Calculator</h1></header>  
+        <main class=".col-xl-">
+            <article class="row">
+                <section class="col-sm">
+                    
                     <div id="calculator">
-                            <label for="2019income">2019 Income: </label><input id="2019income" type="number" onchange="onIncomeChanged(this.value)"><br>
-                            <label for="numChildren">Number of children dependents: </label><input id="numChildren" type="number" onchange="onNumChildrenChanged(this.value)"><br>
-                            <label for="radioFilingStatus">Filing status: </label>
-                            <input id="radioIndividual" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="0" checked="true"><label for="radioIndividual">Individual</label>
-                            <input for="radioHeadOfHousehold" id="radioHeadOfHousehold" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="1"><label for="radioHeadOfHousehold">Head of Household</label>
-                            <input for="radioMarried" id="radioMarried" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="2"><label for="radioMarried">Married</label>
+                        <form class="form-check">
+                            <h3>Coronavirus Stimulus Check Calculator</h3>
+                            <div id="divInstr">Enter your annual income</div>
+                            <label class="col-sm-5 col-form-label" for="2019income">2019 Income: </label><input id="2019income" type="number" onchange="onIncomeChanged(this.value)"><br>
+                            <label class="col-sm-5 col-form-label" for="numChildren">Number of children dependents: </label><input id="numChildren" type="number" onchange="onNumChildrenChanged(this.value)"><br>
+                            <label class="col-sm-5 col-form-label" for="radioFilingStatus">Filing status: </label><br>
+                            <div class="divRadios">
+                                <input class="form-check-input" id="radioIndividual" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="0" checked="true">
+                                <label class="form-check-label" for="radioIndividual">Individual</label><br>
+                                <input class="form-check-input" for="radioHeadOfHousehold" id="radioHeadOfHousehold" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="1">
+                                <label class="form-check-label" for="radioHeadOfHousehold">Head of Household</label><br>
+                                <input class="form-check-input" for="radioMarried" id="radioMarried" type="radio" name="radioFilingStatus" onchange="onFilingStatus(this.value)" value="2">
+                                <label class="form-check-label" for="radioMarried">Married</label><br>
+                            </div>
                             <h3>Results</h3>
-                            <label for="filingStatus">Filing status: </label><span class="spanValue" id="filingStatus">Individual</span><br>
-                            <label for="amountOver">Amount over $75,000 limit: </label><span class="spanValue" id="amountOver">0</span><br>
-                            <label for="amountFromIncome">Amount from income: </label><span class="spanValue" id="amountFromIncome">0</span><br>
-                            <label for="amountFromChildren">Amount from children: </label><span class="spanValue"id="amountFromChildren">0</span><br>
-                            <div id="divTotal"><label for="checkAmount" class="totalCheckAmount">Expected check amount: </label><span class="spanValue" id="checkAmount">0</span><br></div>
+                            <label class="col-sm-5 col-form-label" for="filingStatus">Filing status: </label><span class="spanValue" id="filingStatus">Individual</span><br>
+                            <label class="col-sm-5 col-form-label" for="amountOver">Amount over $75,000 limit: </label><span class="spanValue" id="amountOver">0</span><br>
+                            <label class="col-sm-5 col-form-label" for="amountFromIncome">Amount from income: </label><span class="spanValue" id="amountFromIncome">1200</span><br>
+                            <label class="col-sm-5 col-form-label" for="amountFromChildren">Amount from children: </label><span class="spanValue"id="amountFromChildren">0</span><br>
+                            <div id="divTotal"><label class="col-sm-5 col-form-label" for="checkAmount" class="totalCheckAmount">Expected check amount: </label><span class="spanValue" id="checkAmount">1200</span><br></div>
+                        </form>
                     </div>
                 </section>
-                <aside>
+                <aside class="col-sm">
                     <h3>Coronavirus Stimulus Summary</h3>
                     <div>
                         <ul>

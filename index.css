@@ -19,16 +19,17 @@ section {
     background-color: #88ccbb;
     color: #333333;
     line-height: 1.5em;
-    width:40%;
+    width: 40%;
 
     font-size: 20px;
     height: 100%;
     padding-bottom: 1%;
-    display: inline-block;
+    padding-top: 1%;
+    display: inline-block !important;
     min-width: 560px;
 }
 section h3 {
-    margin-left: 20px;
+    margin-left: -20px;
 }
 #divInstr {
     font-style: italic;
@@ -45,6 +46,7 @@ aside {
     display: inline-block;
     font-size:20px;
     line-height: 1.5em;
+    padding-top: 1%;
 }
 aside h3 {
     margin-left: 20px;
@@ -59,4 +61,13 @@ header {
     padding: 10px 10px 10px 10px;
     font-size: 24px;
     font-family: 'Merriweather', serif;
+}
+
+.divRadios {
+    margin-left: 100px;
+}
+
+input[type=radio] {
+    width: 0.9em;
+    height: 0.9em;
 }

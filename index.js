@@ -95,3 +95,6 @@ function updateTotal() {
     total = amountFromChildren + amountFromIncome;
     document.getElementById("checkAmount").innerText = total 
 }
+
+updateIncome();
+updateTotal();
