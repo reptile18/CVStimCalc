@@ -1,10 +1,12 @@
 #divTotal {
     background-color: #22ddcc;
     font-weight: bold;
+    font-size:24px;
 }
 article {
-    background-color: #000000;
+    background-color: #555555;
     height: min-content;
+    display: flex;
 }
 main {
     background-color: #000000;
@@ -14,16 +16,16 @@ body {
     background-color: #000000;
 }
 section {
-    /*background-color: #99ddcc;*/
     background-color: #88ccbb;
-    /*color: #113311;*/
     color: #333333;
     line-height: 1.5em;
     width:40%;
-    float: left;
+
     font-size: 20px;
     height: 100%;
     padding-bottom: 1%;
+    display: inline-block;
+    min-width: 560px;
 }
 section h3 {
     margin-left: 20px;
@@ -38,16 +40,11 @@ section h3 {
     margin-left: 40px;
 }
 aside {
-    /*background-color: #ddcc99;*/
     background: linear-gradient(to right,#ddcc99,#ffffff);
     color: #333333;
-    width: 60%;
-    float:left;
-    height:100%;
+    display: inline-block;
     font-size:20px;
     line-height: 1.5em;
-    /*padding-bottom: 5em;*/
-    padding-bottom: 131px;
 }
 aside h3 {
     margin-left: 20px;
@@ -61,4 +58,5 @@ header {
     color: #333333;
     padding: 10px 10px 10px 10px;
     font-size: 24px;
+    font-family: 'Merriweather', serif;
 }
