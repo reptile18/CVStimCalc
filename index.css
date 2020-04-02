@@ -2,12 +2,28 @@
     background-color: #22ddcc;
     font-weight: bold;
 }
-
+article {
+    background-color: #000000;
+    height: min-content;
+}
+main {
+    background-color: #000000;
+    height:100%;
+}
+body {
+    background-color: #000000;
+}
 section {
-    background-color: #99ddcc;
+    /*background-color: #99ddcc;*/
+    background-color: #88ccbb;
+    /*color: #113311;*/
+    color: #333333;
+    line-height: 1.5em;
     width:40%;
     float: left;
-    font-size: 18px;
+    font-size: 20px;
+    height: 100%;
+    padding-bottom: 1%;
 }
 section h3 {
     margin-left: 20px;
@@ -22,11 +38,16 @@ section h3 {
     margin-left: 40px;
 }
 aside {
-    background-color: #ddcc99;
+    /*background-color: #ddcc99;*/
+    background: linear-gradient(to right,#ddcc99,#ffffff);
+    color: #333333;
     width: 60%;
     float:left;
-    height:311px;
-    font-size:18px;
+    height:100%;
+    font-size:20px;
+    line-height: 1.5em;
+    /*padding-bottom: 5em;*/
+    padding-bottom: 131px;
 }
 aside h3 {
     margin-left: 20px;
@@ -35,7 +56,9 @@ aside div {
     margin-left: 40px;
 }
 header {
-    background-color: #dd99cc;
+    /*background-color: #dd99cc;*/
+    background: linear-gradient(to right, #dd99cc,#ffbbee);
+    color: #333333;
     padding: 10px 10px 10px 10px;
     font-size: 24px;
 }
